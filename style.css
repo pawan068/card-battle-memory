@@ -9,7 +9,7 @@ body{
   justify-content: center;
   align-items: center;
   background-color: #548687;
-  padding:15px;
+  padding:10px;
 }
 .container{
  background-color: white;
@@ -17,13 +17,13 @@ body{
   max-height: 80vh;
   width: 400px;
   max-width: 98vw;
-
   overflow: hidden;
   box-shadow: 0px 0px 10px ;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding:5px
 }
 @media(min-width:1000px){
 body{
@@ -48,7 +48,6 @@ body{
   height: auto;
   width: 100%;
   display: flex;
-  border: solid;
   overflow: none;
 }
 .turn1,.turn2{
@@ -99,7 +98,7 @@ body{
 }
 .game {
   display: grid;
-  grid-template-columns: repeat(4, 80px); 
+  grid-template-columns: repeat(4, 75px); 
   gap: 10px;
   justify-content: center;
   padding: 15px 5px;
@@ -161,6 +160,7 @@ transform: rotateY(180deg);
   border-radius: 5px;
   cursor: pointer;
 }
+
 
 
 
