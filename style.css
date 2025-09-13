@@ -6,7 +6,7 @@ body{
   height: 100vh;
   width: 100vw;
   display: flex;
- justify-content:center;
+  justify-content: center;
   align-items: center;
   background-color: #548687;
 }
@@ -14,7 +14,9 @@ body{
  background-color: white;
   height: 600px;
   max-height: 80vh;
-  max-width: 100vw;
+  width: 400px;
+  max-width: 98vw;
+
   overflow: hidden;
   box-shadow: 0px 0px 10px ;
   border-radius: 10px;
@@ -27,7 +29,7 @@ body{
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   background-color: #548687;
 }
@@ -45,6 +47,7 @@ body{
   height: auto;
   width: 100%;
   display: flex;
+  border: solid;
   overflow: none;
 }
 .turn1,.turn2{
@@ -157,9 +160,5 @@ transform: rotateY(180deg);
   border-radius: 5px;
   cursor: pointer;
 }
-
-
-
-
 
 
