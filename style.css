@@ -47,7 +47,6 @@ body{
   height: auto;
   width: 100%;
   display: flex;
-  border: solid;
   overflow: none;
 }
 .turn1,.turn2{
@@ -160,5 +159,6 @@ transform: rotateY(180deg);
   border-radius: 5px;
   cursor: pointer;
 }
+
 
 
