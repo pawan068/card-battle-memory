@@ -16,20 +16,20 @@ body{
   max-height: 80vh;
   width: 400px;
   max-width: 98vw;
+
   overflow: hidden;
   box-shadow: 0px 0px 10px ;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 @media(min-width:1000px){
 body{
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background-color: #548687;
 }
@@ -97,7 +97,7 @@ body{
 }
 .game {
   display: grid;
-  grid-template-columns: repeat(4, 75px); 
+  grid-template-columns: repeat(4, 80px); 
   gap: 10px;
   justify-content: center;
   padding: 15px 5px;
@@ -107,8 +107,8 @@ body{
 }
 
 .card {
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,10 +159,5 @@ transform: rotateY(180deg);
   border-radius: 5px;
   cursor: pointer;
 }
-
-
-
-
-
 
 
