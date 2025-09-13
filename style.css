@@ -9,7 +9,6 @@ body{
   justify-content: center;
   align-items: center;
   background-color: #548687;
-  padding:10px;
 }
 .container{
  background-color: white;
@@ -160,6 +159,7 @@ transform: rotateY(180deg);
   border-radius: 5px;
   cursor: pointer;
 }
+
 
 
 
