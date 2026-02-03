@@ -1,54 +1,70 @@
 *{
-  margin: 0;padding: 0;box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
 body{
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #548687;
+  background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
 }
+
+/* CONTAINER */
 .container{
-background-color: white;
+  background: #f8fafc;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+  border-radius: 8px;
 }
-.player1,.player2{
-background:#77cacb;
-width: 100%;
-height: auto;
-display: flex;
-overflow: none;
-color: white;
-border: solid 0.3px grey;
+
+/* PLAYER CONTAINERS */
+.player1,
+.player2{
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  width: 100%;
+  height: auto;
+  display: flex;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.25);
 }
-.turn1,.turn2{
+
+/* TURN */
+.turn1,
+.turn2{
   width: 50%;
-  border: solid;
+  border: 1px solid rgba(255,255,255,0.25);
   padding: 15px;
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-   background-color: grey;
-  color: darkgrey;
+  background: rgba(0,0,0,0.25);
+  color: #cbd5e1;
 }
-#turn1{
-  background-color: green;
-  color: white;
-}
-.score1,.score2{
+
+
+
+/* SCORE */
+.score1,
+.score2{
   width: 50%;
-  border: solid;
+  border: 1px solid rgba(255,255,255,0.25);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.3rem;
   padding: 15px 0px;
   font-weight: 700;
-
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  color: #ffffff;
 }
-.game {
+
+/* GAME GRID */
+.game{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -56,61 +72,75 @@ border: solid 0.3px grey;
   justify-items: center;
   align-items: center;
   padding: 10px;
-  background: #000;
+  background: linear-gradient(135deg, #020617, #111827);
   height: 70%;
-  
 }
-.card {
+
+/* CARD */
+.card{
   width: 70px;
   height: 70px;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: purple;
+  background: linear-gradient(135deg, #7c3aed, #c026d3);
   border-radius: 10px;
   cursor: pointer;
-  color: transparent; 
-  transition: transform 0.4s ease , color 0.5s ease;
+  color: transparent;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+  transition: transform 0.4s ease, color 0.5s ease;
 }
 
-.card.flipped {
-  color: white; 
+/* FLIPPED CARD */
+.card.flipped{
+  color: #ffffff;
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
   transform: rotateY(180deg);
-  
 }
 
+/* LOCKED CARD */
 .card.flipper{
   color: transparent;
+  background: linear-gradient(135deg, #334155, #1e293b);
   transform: rotateY(180deg);
 }
 
-.restart-container {
+/* RESTART OVERLAY */
+.restart-container{
   position: fixed;   
   top: 0;
   left: -100%;      
   width: 100%;
   height: 100%;
-  background-color: rgba(199, 195, 195, 0.587);
+  background: rgba(2,6,23,0.75);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: left 0.8s ease-in-out;
-  z-index: 9999; 
+  z-index: 9999;
 }
-.restart-container.active {
+
+.restart-container.active{
   left: 0;
 }
 
-.restart-content {
+/* RESTART CONTENT */
+.restart-content{
   text-align: center;
+  background: #020617;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  color: #ffffff;
 }
-#restart {
-  color: white;
-  background-color: green;
+
+/* RESTART BUTTON */
+#restart{
+  color: #ffffff;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 6px 18px rgba(34,197,94,0.5);
 }
-
-
