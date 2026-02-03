@@ -28,7 +28,7 @@ items.forEach((item, i) => {
   let card = document.createElement("div");
   card.classList.add("card");
   card.dataset.value = item;
-  game.appendChild(card);
+  game.appendChild(card); 
 
   card.addEventListener("click", () => {
     if (card === firstcard || card.style.pointerEvents === "none" || lockBoard) return;
@@ -117,7 +117,7 @@ function scores(turnn) {
 
   let totalScore = scoreplayer1 + scoreplayer2;
   console.log("Total Score:", totalScore);
-  if (totalScore === 8) {
+  if (totalScore === 10) {
     console.log("All boxes are filled");
     gameover=true;
     result();
@@ -132,7 +132,7 @@ function result() {
     turn2.style.cssText = "background-color: green; color: white;";
   } else if (scoreplayer1 > scoreplayer2) {
     turn1.innerText = "WINNER";
-    turn2.innerText = "LOOSER";
+    turn2.innerText = "LOSER";
 
     turn1.style.cssText = "background-color: green; color: white;";
     turn2.style.cssText = "background-color: red; color: white;";
@@ -152,5 +152,4 @@ function result() {
 
 function newgame(){
   location.reload();
-
 }
