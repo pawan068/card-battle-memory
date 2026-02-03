@@ -20,7 +20,7 @@ let lockBoard = false;
 
 let gameover=false;
 
-let items = ["🍎", "🍌", "🍇", "🍊", "🍍", "🥭", "🍉", "🍒"];
+let items = ["🍎","🍌","🥭","🍊","🍍","🍇","🍓","🍉","🥝","🍑"];
 items = [...items, ...items];
 items.sort(() => Math.random() - 0.5);
 
@@ -152,4 +152,5 @@ function result() {
 
 function newgame(){
   location.reload();
+
 }
